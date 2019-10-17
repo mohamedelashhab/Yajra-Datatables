@@ -22,7 +22,7 @@ class CreateTasksTable extends Migration
             $table->text('content');
             $table->text('description');
             $table->string('user_name');
-            $table->enum('statuse', ['statuse1', 'statuse2', 'statuse3']);
+            $table->string('statuse');
             $table->timestamps();
         });
     }
